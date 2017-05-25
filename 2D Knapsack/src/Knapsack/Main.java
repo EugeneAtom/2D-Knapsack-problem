@@ -12,9 +12,9 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        String rectanglesFile = "/home/eugene/IdeaProjects/2D Knapsack/src/Knapsack/rectangles.txt";
+        String rectanglesFile = "/home/eugene/Documents/2D-Knapsack-problem/2D Knapsack/src/Knapsack/rectangles.txt";
         Group groupSet = InputFromFile.getRectanglesFromFile(rectanglesFile);
-        String areaFile = "/home/eugene/IdeaProjects/2D Knapsack/src/Knapsack/area.txt";
+        String areaFile = "/home/eugene/Documents/2D-Knapsack-problem/2D Knapsack/src/Knapsack/area.txt";
         Rectangle area = InputFromFile.getArea(areaFile);
 
         int groupSize = 10;

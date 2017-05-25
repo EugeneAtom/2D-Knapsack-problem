@@ -7,7 +7,6 @@ import java.util.ArrayList;
  */
 public class Group {
     ArrayList<Rectangle> rectangles;
-    int square;
 
     public Group(ArrayList<Rectangle> rectangles) {
         this.rectangles = rectangles;

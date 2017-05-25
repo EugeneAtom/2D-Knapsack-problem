@@ -76,9 +76,9 @@ public class GA {
                 nextPopulation.add(new Group(array));
             }
             bestGroup = GA.getBestGroup(area, nextPopulation);
-//            if (GA.getTotalSquare(bestGroup) * 100 / area.square >= 90) {
-//                break;
-//            }
+            if (GA.getTotalSquare(bestGroup) * 100 / area.square >= 90) {
+                break;
+            }
         }
         return bestGroup;
     }
