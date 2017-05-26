@@ -101,7 +101,7 @@ class Coordinates {
                 "A=" + A +
                 ", xLength=" + xLength +
                 ", yLength=" + yLength +
-                "C=" + C +
+                ", C=" + C +
                 "}";
     }
 

@@ -17,14 +17,14 @@ public class Main {
         String areaFile = "/home/eugene/Documents/2D-Knapsack-problem/2D Knapsack/src/Knapsack/area.txt";
         Rectangle area = InputFromFile.getArea(areaFile);
 
-        int groupSize = 10;
-        int populationSize = 20;
+        int groupSize = 100;
+        int populationSize = 200;
         int square = area.square;
-        int pickedIndividuals = 7;
+        int pickedIndividuals = 70;
 
         Data data = new Data(groupSize, populationSize, square, pickedIndividuals, groupSet.rectangles.size());
 
-        ArrayList<Coordinates> bestGroup = GA.pickBestGroup(data, area, groupSet, 5);
+        ArrayList<Coordinates> bestGroup = GA.pickBestGroup(data, area, groupSet, 100);
         System.out.println("final population: " + bestGroup);
         System.out.println("area square " + area.square);
         double totalSquare = GA.getTotalSquare(bestGroup);
