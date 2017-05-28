@@ -22,13 +22,13 @@ class MyPaint extends JComponent {
 
     public void paint(Graphics g) {
         Random random = new Random();
-        String c1 = String.valueOf(random.nextInt(8));
-        String c2 = String.valueOf(random.nextInt(7));
-        String c3 = String.valueOf(random.nextInt(2));
-        String c4 = String.valueOf(random.nextInt(6));
-        String c5 = String.valueOf(random.nextInt(5));
-        String c6 = String.valueOf(random.nextInt(1));
-        g.setColor(Color.decode(c1 + c2 + c3 + c4 + c5 + c6));
+        String c1 = "A";
+        String c2 = String.valueOf(random.nextInt(8));
+        String c3 = String.valueOf(random.nextInt(8));
+        String c4 = String.valueOf(random.nextInt(8));
+        String c5 = String.valueOf(random.nextInt(8));
+        String c6 = String.valueOf(random.nextInt(8));
+        g.setColor(Color.decode("#" + c1 + c2 + c3 + c4 + c5 + c6));
         g.fillRect(x, y, xLength, yLength);
         g.drawRect (x, y, xLength, yLength);
     }
