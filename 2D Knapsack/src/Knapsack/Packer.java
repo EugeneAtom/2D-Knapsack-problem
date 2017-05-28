@@ -1,7 +1,5 @@
 package Knapsack;
 
-import Knapsack.Group;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 

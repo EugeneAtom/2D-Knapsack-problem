@@ -20,7 +20,7 @@ public class GA {
     /*
     Выбирает случайные элементы из массива
     array - исходный массив
-    pickElements - количестов элементов, которые нужно выбрать из массива
+    pickElements - количество элементов, которые нужно выбрать из массива
      */
     public static ArrayList<Rectangle> getRandomArray(ArrayList<Coordinates> coordinates, int pickSize) {
         ArrayList<Rectangle> randomArray = new ArrayList<>();
@@ -76,9 +76,9 @@ public class GA {
                 nextPopulation.add(new Group(array));
             }
             bestGroup = GA.getBestGroup(area, nextPopulation);
-//            if (GA.getTotalSquare(bestGroup) * 100 / area.square >= 90) {
-//                break;
-//            }
+            if (GA.getTotalSquare(bestGroup) * 100 / area.square >= 95) {
+                break;
+            }
         }
         return bestGroup;
     }
